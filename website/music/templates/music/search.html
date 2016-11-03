@@ -1,0 +1,14 @@
+{% extends 'music/base.html' %}
+{% block body %}
+
+    {%if search_list%}
+    <ul>
+        <h1>search found:</h1>
+        {%for album in search_list%}
+        <a href="{% url 'music:detail' album.id %} "> {{album.album_title}} </a>
+        {%endfor%}
+    </ul>
+    {%else%}
+       <h3>you don't have any search item</h3>
+    {%endif%}
+{% endblock %}

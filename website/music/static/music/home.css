@@ -1,0 +1,24 @@
+body{
+   background:white  url("images/1.jpg");
+    background-repeat: no-repeat;
+
+
+}
+h1 {
+  position: relative;
+  text-align: center;
+}
+h1{ color: blue; font: 40px satisfy;}
+a {
+    color: #FFFFFF;
+    text-decoration: underline;
+    float: right;
+
+}
+}
+
+
+
+.navbar-brand{
+   font-family:'satisfy', cursive;
+}

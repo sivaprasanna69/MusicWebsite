@@ -1,0 +1,19 @@
+{% extends 'music/base.html' %}
+{% block body %}
+
+    {%if all_songs%}
+    <ul>
+
+        {%for song in all_songs%}
+
+                <li>
+                    {{song.song_title}}
+                </li>
+
+
+        {%endfor%}
+    </ul>
+    {%else%}
+       <h3>you don't have any songs</h3>
+    {%endif%}
+{% endblock %}
